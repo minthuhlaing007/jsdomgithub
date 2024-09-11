@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Node</title>
+  </head>
+  <body>
+    <h1 id="heading">Dom nodes</h1>
+
+    <div id="content">
+      <h3>I am h3 inside of div</h3>
+      <p>i am p inside of div</p>
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
+    </div>
+    <script>
+      let heading = document.getElementById("heading");
+      console.log("this is heading node type: " + heading.nodeType);
+      console.log("this is heading node name: " + heading.nodeName);
+      let cloneHeading = heading.cloneNode(true);
+      console.log(cloneHeading);
+
+      let content = document.getElementById("content");
+      console.log("this is content node type: " + content.nodeType);
+      console.log("this is content node name: " + content.nodeName);
+      let cloneContent = content.cloneNode(true);
+      console.log(content);
+      console.log(cloneContent);
+    </script>
+  </body>
+</html>
+
+
+

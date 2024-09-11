@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Traverse Dom</title>
+</head>
+<body>
+
+  <div class="header">
+
+    <p>hello</p>
+    <h1 id="heading">Welcome From DOM Basic Course</h1>
+    <p>Hello World</p>
+
+  </div>
+
+  <script>
+    let heading = document.getElementById("heading");
+    let parentELement = heading.parentElement;
+    let header = document.getElementsByClassName("header")[0];
+    // console.log(header);
+    let childNode = header.childNodes;
+    let childElement = header.children;
+    let sibling = heading.nextSibling;
+    let nextELementSibling = heading.nextElementSibling;
+    let previousElementSibling = heading.previousElementSibling
+    
+    console.log(previousElementSibling);
+    // console.log(childNode);
+    // console.log(childElement);
+
+  </script>
+</body>
+</html>
